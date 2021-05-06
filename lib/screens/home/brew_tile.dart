@@ -18,7 +18,7 @@ class BrewTile extends StatelessWidget {
             ) ,
             title: Text(brew.name),
             subtitle: Text('Takes ${brew.sugars} sugar(s)'),
-            ),
+            )
       ),
       
     );
