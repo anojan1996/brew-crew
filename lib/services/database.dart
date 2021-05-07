@@ -49,8 +49,9 @@ Stream<List<Brew>> get brews {
 }
 
 // get user doc stream
-Stream<DocumentSnapshot> get userData {
-  return brewCollection.document(uid).snapshots();
+Stream<UserData> get userData {
+  return brewCollection.document(uid).snapshots()
+  .map(_userDataFromSnapshot);
 }
 }
 
